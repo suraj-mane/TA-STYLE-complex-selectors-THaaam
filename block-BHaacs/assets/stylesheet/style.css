@@ -1,0 +1,380 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main style */
+body {
+	font-family: 'Inter', sans-serif;
+	line-height: 1.2;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* flex */
+.flex {
+  display: flex;
+}
+/* space-between */
+.space-between {
+  justify-content: space-between;
+}
+.center {
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.col-48 {
+	flex: 0 1 45%;
+}
+.col-40 {
+	flex: 0 1 40%;
+}
+.col-28 {
+	flex: 0 1 28%;
+}
+.col-20 {
+	flex: 0 1 20%;
+}
+a {
+	text-decoration: none;
+	color: whi;
+}
+/* header */
+.header {
+	position:relative;
+	z-index: 1;
+	padding: 1rem 0;
+}
+.brand-name a {
+	font-size: 32px;
+	font-weight: 400;
+	color: white;
+}
+.nav-link li a {
+	margin-left: 10px;
+	font-size: 24px;
+	color: white;
+	padding-right: 20px;
+}
+
+/* Hero */
+.hero {
+  background-color: #58BEC2;
+  text-align: center;
+	position: relative;
+	padding: 10rem 0 29rem 0;
+	bottom: 5rem;
+}
+.hero-info {
+	padding-bottom: 2rem;
+}
+.hero-title {
+	font-size: 5rem;
+	font-weight: 600;
+	color: white;
+	padding-bottom: 2rem;
+}
+.hero-btn {
+	border: none;
+	width: 12rem;
+	padding: 1.2rem 0;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 0.6rem;
+}
+.hero-img {
+	position: absolute;
+	left: 25rem;
+}
+/* document */
+.document {
+	margin-top: 10rem;
+}
+.doc-type  a{
+	font-size: 2.5rem;
+	margin-left: 1rem;
+	font-weight: 700;
+	color: #BDC8E0;
+}
+/* Score */
+.score {
+	margin-top: 10rem;
+	margin-bottom: 2rem;
+}
+.score-title {
+	font-size: 2.7rem;
+	margin-bottom: 2rem;
+	color: #2b4ca8;
+	font-weight: 600;
+}
+.score-text {
+	font-size: 1.8rem;
+	color: #677CAB;
+	margin-bottom: 1.5rem;
+}
+#score-btn {
+	padding: 0.9rem 2rem;
+	border: none;
+	background-color: #58BEC2;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 600;
+	position: relative;
+	left: 0.8rem;
+}
+.after {
+	width: 0;
+	height: 0;
+	border-top: 28px solid #FFFEFE;
+	border-left: 30px solid #58BEC2;
+	border-bottom: 23px solid #FFFEFE;
+	position: relative;
+	bottom: 3.2rem;
+	left: 10.4rem;
+}
+.before {
+	width: 0;
+	height: 0;
+	border-top: 26px solid #58BEC2;
+	border-left: 13px solid #FFFEFE;
+	border-bottom: 25px solid #58BEC2;
+	position: relative;
+	top: 3.2rem;
+}
+/* weekly-score */
+.weekly-score {
+	text-align: center;
+}
+.weekly-brand {
+	font-size: 3rem;
+	font-weight: 600;
+	color: #2b4ca8;
+}
+.table{
+	width: 100%;
+	margin: 2rem 0;
+}
+.headline {
+	background-color: #3C9EA0;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+td {
+	padding: 1rem;
+	border: 2px solid #E4E4E5;
+}
+.table-line {
+	color: #75787E;
+	font-weight: 500;
+}
+.table-line:nth-child(2n+1) {
+	background-color: #D4E4E5;
+}
+/* Price-chart */
+.price-chart {
+	margin: 4rem 0;
+	text-align: center;
+}
+.price-title {
+	width: 400px;
+	font-size: 2rem;
+	color: #2b4ca8;
+	margin: 0 0 2rem 30rem;
+	font-weight: 600;
+}
+.period {
+	display: inline;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 2rem;
+}
+.period-btn {
+	padding: 0.4rem 2.5rem;
+	background-color: #BAEDEC;
+	border-radius: 40px;
+}
+.inner-btn {
+	background-color: #58BEC2;
+	padding: 11px;
+	border-radius: 50%;
+	border: none;
+	position: relative;
+	right: 10.5rem;
+	bottom: 0.4rem;
+}
+.price-table {
+	margin: 4rem 0;
+}
+.first-table {
+	border: 5px solid #E8EEFB;
+	border-radius: 14px;
+	padding: 2rem;
+}
+.price-table-title {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #2b4ca8;
+	margin: 1rem;
+}
+.price-table-text {
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	color: #8B9BBF;
+}
+.price-symbole{
+	font-size: 1.5rem;
+	color: #58BEC2;
+	font-weight: 600;
+}
+.price {
+	font-size: 3rem;
+	margin-left: 0.6rem;
+	color: #58BEC2;
+	font-weight: 600;
+}
+.peride {
+	font-size: 1.5rem;
+	margin-left: 0.6rem;
+	color: #677CAB;
+}
+.list {
+	margin: 2rem 0;
+	text-align: left;
+}
+.list li {
+	margin: 1rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.check {
+	color: #667394;
+}
+.times {
+	color: #7185B0;
+}
+.fa-check {
+	color: #5EC1C5;
+	margin-right: 0.5rem;
+}
+.fa-times {
+	color: #E94677;
+	margin-right: 0.5rem;
+}
+.price-btn {
+	padding: 1.2rem 10rem;
+	border: 2px solid #C6D4F0;
+	background-color: #FFFEFE;
+	border-radius: 12px;
+	color: #3A4E88;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.secound-table {
+	border: 5px solid #E8EEFB;
+	border-radius: 14px;
+	padding: 2rem;
+}
+.sec {
+	background-color: #58BEC2;
+	border: none;
+	color: #FFFEFE;
+}
+/* big Box */
+.big-box {
+	background-color: #58BEC2;
+	padding: 5rem;
+	text-align: center;
+	border-radius: 15px;
+}
+.big-text {
+	font-size: 2.5rem;
+	color: white;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+.big-btn {
+	padding: 1rem 7rem;
+	border: none;
+	font-size: 1.5rem;
+	border-radius: 12px;
+}
+/* Footer */
+.footer {
+	margin: 4rem;
+}
+.footer-title {
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+.footer-text {
+	padding-right: 4rem;
+	font-size: 1.2rem;
+	color: #8294BB;
+}
+.symbol-icon{
+	margin: 2rem 0;
+}
+.symbol-icon li {
+	display: inline;
+	margin-left: 1rem;
+	padding: 1rem;
+	background-color: #58BEC2;
+	border-radius: 50%;
+}
+.symbol-icon li a{
+	color: white;
+}
+.footer-link {
+	margin: 1rem 0;
+	font-size: 1.2rem;
+}
+.footer-link a{
+	color: #7286B3;
+}
+.number {
+	color: #7286B3;
+}
