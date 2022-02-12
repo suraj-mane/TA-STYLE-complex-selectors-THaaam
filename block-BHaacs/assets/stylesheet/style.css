@@ -44,6 +44,7 @@ table {
 
 /* main style */
 body {
+	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	line-height: 1.2;
 }
@@ -51,6 +52,7 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
+	padding: 0 10rem;
 }
 /* flex */
 .flex {
@@ -80,13 +82,13 @@ body {
 }
 a {
 	text-decoration: none;
-	color: whi;
+	color: white;
 }
 /* header */
 .header {
-	position:relative;
-	z-index: 1;
 	padding: 1rem 0;
+	position: relative;
+	z-index: 1;
 }
 .brand-name a {
 	font-size: 32px;
@@ -103,10 +105,10 @@ a {
 /* Hero */
 .hero {
   background-color: #58BEC2;
-  text-align: center;
 	position: relative;
-	padding: 10rem 0 29rem 0;
-	bottom: 5rem;
+	bottom: 8rem;
+	padding-top: 10rem;
+	text-align: center;
 }
 .hero-info {
 	padding-bottom: 2rem;
@@ -125,14 +127,11 @@ a {
 	font-weight: 400;
 	border-radius: 0.6rem;
 }
-.hero-img {
-	position: absolute;
-	left: 25rem;
+.hero-img img {
+	position: relative;
 }
+
 /* document */
-.document {
-	margin-top: 10rem;
-}
 .doc-type  a{
 	font-size: 2.5rem;
 	margin-left: 1rem;
@@ -377,4 +376,51 @@ td {
 }
 .number {
 	color: #7286B3;
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+	body {
+		box-sizing: border-box;
+	}
+	.nav-link li a {
+		color: #000;
+	}
+	.hero {
+		width: auto;
+		margin: auto 0;
+	}
+	img {
+		width: 100%;
+	}
+	.md-wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.md-48 {
+		flex: 1 0 48%;
+	}
+	.md-100 {
+		flex: 1 0 100%;
+	}
+	.document {
+		margin-top: 8rem;
+	}
+	.doc-type img {
+		width: 10%;
+		margin: 1rem;
+	}
+	.price-table {
+		text-align: center;
+	}
+	.first-table {
+		margin: 1rem 0;
+	}
+	.secound-table {
+		margin: 1rem 0;
+	}
+	.list {
+		text-align: center;
+	}
 }
